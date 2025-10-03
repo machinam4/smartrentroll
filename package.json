@@ -1,0 +1,21 @@
+{
+  "name": "waterbills-monorepo",
+  "version": "1.0.0",
+  "description": "Rent + Water Billing System",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"bun run dev:api\" \"bun run dev:worker\" \"bun run dev:web\"",
+    "dev:api": "bun run --filter=@waterbills/api dev",
+    "dev:worker": "bun run --filter=@waterbills/worker dev",
+    "dev:web": "bun run --filter=@waterbills/web dev",
+    "build": "bun run --filter=... build",
+    "install:all": "bun install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
