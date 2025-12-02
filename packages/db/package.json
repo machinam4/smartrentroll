@@ -1,0 +1,10 @@
+{
+  "name": "@waterbills/db",
+  "version": "1.0.0",
+  "description": "Database models and schemas",
+  "main": "index.js",
+  "dependencies": {
+    "mongoose": "^8.0.3",
+    "@waterbills/shared": "workspace:*"
+  }
+}

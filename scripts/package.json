@@ -1,0 +1,14 @@
+{
+  "name": "@waterbills/scripts",
+  "version": "1.0.0",
+  "description": "Database scripts for seeding and migrations",
+  "main": "seed.js",
+  "scripts": {
+    "seed": "bun run seed.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "@waterbills/db": "workspace:*"
+  }
+}
